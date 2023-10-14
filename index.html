@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="inputs">
+      <div class="input-group day">
+        <p>DAY</p>
+        <input onkeydown="if(event.key==='.'){event.preventDefault();}" id="day-input" type="number" placeholder="DD">
+        <p class="error">error message</p>
+      </div>
+      <div class="input-group month">
+        <p>MONTH</p>
+        <input onkeydown="if(event.key==='.'){event.preventDefault();}" id="month-input" type="number" placeholder="MM">
+        <p class="error">error message</p>
+      </div>
+      <div class="input-group year">
+        <p>YEAR</p>
+        <input onkeydown="if(event.key==='.'){event.preventDefault();}" id="year-input"  type="number" placeholder="YYYY">
+        <p class="error">error message</p>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="line"></div>
+      <button class="count-button"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="output">
+      <p class="years"><span id="year-output">--</span>years</p>
+      <p class="months"><span id="month-output">--</span>months</p>
+      <p class="days"><span id="day-output">--</span>days</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
